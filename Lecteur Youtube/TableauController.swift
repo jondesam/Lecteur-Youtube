@@ -43,8 +43,8 @@ class TableauController: UIViewController,UITableViewDelegate,UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let chanson = chansons[indexPath.row]
-        performSegue(withIdentifier: identifiantSegue, sender: chanson)
+        let segueSender = chansons[indexPath.row]
+        performSegue(withIdentifier: identifiantSegue, sender: segueSender)
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
