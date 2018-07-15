@@ -30,6 +30,7 @@ class Chanson  {
     
     var miniatureUrl: String {
         return _baseUrlminiature + _code + _finUrlMiniature
+       // http://i.ytimg.com/vi/2bjk26RwjyU/maxresdefault.jpg //example
     }
     
     init(artiste: String, titre:String, code: String) {

@@ -43,6 +43,7 @@ class ChansonCell: UITableViewCell {
                 if let imageData = data, let image = UIImage(data: imageData){
                     DispatchQueue.main.async {
                         self.miniature.image = image
+                       
                     }
                 }
             })
