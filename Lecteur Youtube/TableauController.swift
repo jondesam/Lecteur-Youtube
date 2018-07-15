@@ -20,6 +20,7 @@ class TableauController: UIViewController,UITableViewDelegate,UITableViewDataSou
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        title = "my favorite video"
         ajouterChanson()
         // Do any additional setup after loading the view.
     }
@@ -37,7 +38,7 @@ class TableauController: UIViewController,UITableViewDelegate,UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 170
+        return 130
     }
    
     func ajouterChanson()  {
